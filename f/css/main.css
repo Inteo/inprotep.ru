@@ -1703,6 +1703,7 @@ a:hover .icon-inteo {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
+  line-height: 20px;
 }
 .arrowed2:after {
   content: '';
@@ -1713,7 +1714,7 @@ a:hover .icon-inteo {
   -webkit-transform: rotate(315deg);
   transform: rotate(315deg);
   width: 5px;
-  margin-left: 6px;
+  margin-left: 8px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1723,7 +1724,7 @@ a:hover .icon-inteo {
   height: 1px;
   width: 7px;
   position: absolute;
-  bottom: .9em;
+  bottom: .6em;
   right: 0;
 }
 .wrap {
@@ -1942,7 +1943,6 @@ a:hover .icon-inteo {
   margin-top: -5px;
 }
 .working__about {
-  font-size: 14px;
   margin-bottom: 95px;
 }
 .working__adv {
@@ -2370,7 +2370,7 @@ a:hover .icon-inteo {
   left: 20px;
   top: -70px;
   right: -30px;
-  bottom: -50px;
+  bottom: -70px;
   overflow: hidden;
 }
 .map img {

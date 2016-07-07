@@ -5,4 +5,21 @@
 
 $(document).ready(function() {
 	$('.main-control').Stickyfill();
+	$(".equal-height").each(function(){
+		$(".equal-height__row").each(function(){
+			var heights = $(this).find(".equal-height__item").map(function ()
+    	{
+        return $(this).height();
+    	}).get(),
+    	maxHeight = Math.max.apply(null, heights);
+    	$(this).find(".equal-height__item").each(function(){
+    		var h = maxHeight - $(this).height();
+    		var content = $(this).find(".equal-height__content");
+    		content.height(content.height() + h);
+    	});
+		});
+	});
+	
 });
+
+
