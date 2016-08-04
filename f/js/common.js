@@ -108,3 +108,10 @@ $(document).ready(function() {
 $(window).on('scroll', function() {
 		sticky();
 }).trigger('scroll');
+$(function(){
+	$(".scroll-open__trigger").click(function(){
+		$(this).closest(".scroll-open").find(".scroll-open__content").addClass("scroll-open__content_active");
+		$(this).hide();
+		return false;
+	});
+});
