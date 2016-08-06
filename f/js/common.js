@@ -150,6 +150,7 @@ $(document).ready(function() {
     		var content = $(this).find(".equal-height__content");
     		content.height(content.height() + h);
     	});
+    	$(this).height(maxHeight);
 		});
 	});
 	$(".input.valid").unbind().blur( function(){
