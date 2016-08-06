@@ -2,15 +2,17 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  min-height: 100%;
+  position: relative;
 }
 body {
   margin: 0;
   background: #232a35;
   /* #f5f5f5; */
+  margin-bottom: 90px;
 }
 body,
 html {
-  height: 100%;
   padding: 0;
 }
 article,
@@ -1900,17 +1902,7 @@ a:hover .arrow_down:after {
   width: 150px;
 }
 .wrap {
-  min-height: 100%;
-  height: auto!important;
-  margin: 0 0 -90px;
-  overflow: hidden;
   min-width: 940px;
-}
-.wrap:after {
-  content: '';
-  height: 90px;
-  margin: 0;
-  padding: 0;
 }
 .content {
   display: table;
@@ -2759,30 +2751,36 @@ a:hover .arrow_down:after {
 .page-navig__holder {
   display: table-row;
   width: 100%;
-  height: 50px;
 }
-.page-navig__holder a {
+.page-navig__holder li {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  padding-left: 0;
+}
+.page-navig__holder li a {
   line-height: 25px;
-  padding: 5px 10px;
+  padding: 12px 10px;
   font-size: 14px;
+  display: block;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.page-navig__holder a:before {
-  display: none;
-}
-.page-navig__holder a:hover,
-.page-navig__holder a.active {
+.page-navig__holder li a:hover {
   background: #2196f3;
   color: #fff;
 }
-.page-navig__holder a.active {
+.page-navig__holder li.active a {
+  background: #2196f3;
+  color: #fff;
+}
+.page-navig__holder li:before {
+  display: none;
+}
+.page-navig__holder li.active {
   pointer-events: none;
 }
 .captioned-img {
@@ -3031,8 +3029,11 @@ a:hover .arrow_down:after {
   max-height: 9999px;
 }
 .footer {
-  min-height: 90px;
+  height: 90px;
   padding: 0 35px;
   min-width: 940px;
   padding-left: 250px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
