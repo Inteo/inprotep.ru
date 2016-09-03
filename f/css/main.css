@@ -3177,6 +3177,33 @@ a:hover .arrow_down:after {
 .scroll-open__content_active {
   max-height: 9999px;
 }
+.designing__item {
+  border: 1px solid #232a35;
+  display: block;
+  margin-bottom: 40px;
+}
+.designing__img {
+  display: block;
+  background: #f5f5f5;
+  border-bottom: 1px solid #232a35;
+}
+.designing__img img {
+  width: 100%;
+}
+.designing__text {
+  padding: 25px 30px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  color: #232a35;
+}
+@media (max-width: 1200px) {
+  .designing__text {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+}
 .footer {
   height: 90px;
   padding: 0 35px;
