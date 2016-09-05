@@ -2895,6 +2895,12 @@ a:hover .arrow_down:after {
   text-align: center;
   padding-top: 10px;
 }
+.process h3 a {
+  color: #1c222a;
+}
+.process h3 a:hover {
+  color: #2196f3;
+}
 .demand-form {
   background: url(../../f/i/demand.jpg) 100% 0;
 }
